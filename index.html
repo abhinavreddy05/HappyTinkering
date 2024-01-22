@@ -37,6 +37,13 @@
 
     </style>
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body>
 
@@ -70,20 +77,115 @@
         </div>
     </nav>
   
-    <div class="bg-[#F0AE34] min-h-[580px] relative" style="background-image: url(./assets/hero-bg.svg); background-size:cover; background-repeat: no-repeat;">
-        <div class="h-full w-1/2 ml-20 flex flex-col gap-2 justify-center align-top">
-            <h1 class="text-6xl underline decoration-[#CC942C] drop-shadow-sm decoration-[15px] text-white leading-tight relative z-30" style="font-family: Bakbak One, sans-serif;">
-                What if Every Child Could <br> Explore the Boundless <br> Realm of Creativity?
-            </h1>
-            <button type="button" class="text-[#881946] bg-white font-medium rounded-[100px] text-lg my-10 px-10 py-3 text-center w-fit">Know More</button>
+    <div class="swiper-hero">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg-[#F0AE34] min-h-[580px] relative" style="background-image: url(./assets/hero-bg.svg); background-size:cover; background-repeat: no-repeat;">
+                <div class="ml-5 md:w-1/2 md:ml-20 flex flex-col gap-2 justify-center align-middle absolute top-0 bottom-0">
+                    <div class=" flex gap-4 align-middle">
+                        <button class="btn-prev bg-white text-[#881946] w-10 h-10 rounded-full font-bold">
+                            <
+                        </button>
+                        <p class=" flex align-middle text-xl text-white" style="align-items: center;">1/4</p>
+                        <button class="btn-nxt bg-white text-[#881946] w-10 h-10 rounded-full font-bold">
+                            >
+                        </button>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl underline decoration-[#CC942C] drop-shadow-sm decoration-[15px] text-white leading-tight relative z-30" style="font-family: Bakbak One, sans-serif;">
+                        What if Every Child Could <br> Explore the Boundless <br> Realm of Creativity?
+                    </h1>
+                    <button type="button" class="text-[#881946] bg-white font-medium rounded-[100px] text-lg my-10 px-10 py-3 text-center w-fit">Know More</button>
+                </div>
+                <img class="absolute right-[-0.5rem] top-[18rem] md:top-[-1.2rem] z-0 h-[400px] md:h-[800px] w-auto" src="./assets/hero-image.png" alt="">
+            </div>
+        
+            <div class="swiper-slide bg-[#36B3CF] min-h-[580px] relative" style="background-image: url(./assets/hero-2-bg.svg); background-size:cover; background-repeat: no-repeat;">
+                <div class="ml-5 md:w-1/2 md:ml-20 flex flex-col gap-2 justify-center align-middle absolute top-0 bottom-0">
+                    <div class=" flex gap-4 align-middle">
+                        <button class="btn-prev bg-white text-[#881946] w-10 h-10 rounded-full font-bold">
+                            <
+                        </button>
+                        <p class=" flex align-middle text-xl text-white" style="align-items: center;">2/4</p>
+                        <button class="btn-nxt bg-white text-[#881946] w-10 h-10 rounded-full font-bold">
+                            >
+                        </button>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl underline decoration-[#2C76CC] drop-shadow-sm decoration-[15px] text-white leading-tight relative z-30" style="font-family: Bakbak One, sans-serif;">
+                        Ever Wondered How <br> 'Makerspaces' <br> Can Transform <br> Young Minds?
+                    </h1>
+                    <button type="button" class="text-[#881946] bg-white font-medium rounded-[100px] text-lg my-10 px-10 py-3 text-center w-fit">Know More</button>
+                </div>
+                <img class="absolute right-[-0.5rem] top-[5rem] md:top-[-1.2rem] z-[-20] md:z-0 h-[800px] w-auto" src="./assets/hero-2.svg" alt="">
+            </div>
+        
+            <div class="swiper-slide bg-[#36B3CF] min-h-[580px] relative" style="background-image: url(./assets/hero-3-bg.svg); background-size:cover; background-repeat: no-repeat;">
+                <div class="ml-5 md:w-1/2 md:ml-20 flex flex-col gap-2 justify-center align-middle absolute top-0 bottom-0">
+                    <div class=" flex gap-4 align-middle">
+                        <button class="btn-prev bg-white text-[#881946] w-10 h-10 rounded-full font-bold">
+                            <
+                        </button>
+                        <p class=" flex align-middle text-xl text-white" style="align-items: center;">3/4</p>
+                        <button class="btn-nxt bg-white text-[#881946] w-10 h-10 rounded-full font-bold">
+                            >
+                        </button>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl underline decoration-[#2C76CC] drop-shadow-sm decoration-[15px] text-white leading-tight relative z-30" style="font-family: Bakbak One, sans-serif;">
+                        Innovate <br> Create <br> Empower Keep <br> Tinkering
+                    </h1>
+                    <button type="button" class="text-[#881946] bg-white font-medium rounded-[100px] text-lg my-10 px-10 py-3 text-center w-fit">Know More</button>
+                </div>
+                <img class="absolute right-[-0.5rem] top-[8rem] md:top-[-1.2rem] z-[-20] md:z-0 h-[600px] w-auto" src="./assets/hero-3.svg" alt="">
+            </div>
+        
+            <div class="swiper-slide bg-[#F0AE34] min-h-[580px] relative" style="background-image: url(./assets/hero-bg.svg); background-size:cover; background-repeat: no-repeat;">
+                <div class="ml-5 md:w-1/2 md:ml-20 flex flex-col gap-2 justify-center align-middle absolute top-0 bottom-0">
+                    <div class=" flex gap-4 align-middle">
+                        <button class="btn-prev bg-white text-[#881946] w-10 h-10 rounded-full font-bold">
+                            <
+                        </button>
+                        <p class=" flex align-middle text-xl text-white" style="align-items: center;">4/4</p>
+                        <button class="btn-nxt bg-white text-[#881946] w-10 h-10 rounded-full font-bold">
+                            >
+                        </button>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl underline decoration-[#CC942C] drop-shadow-sm decoration-[15px] text-white leading-tight relative z-30" style="font-family: Bakbak One, sans-serif;">
+                        Innovate <br> Create <br> Empower Keep <br> Tinkering
+                    </h1>
+                    <button type="button" class="text-[#881946] bg-white font-medium rounded-[100px] text-lg my-10 px-10 py-3 text-center w-fit">Know More</button>
+                </div>
+                <img class="absolute right-[-0.5rem] top-[4rem] md:top-[-1.2rem] z-[-20] md:z-0 h-[800px] w-auto" src="./assets/hero-4.svg" alt="">
+            </div>
         </div>
-        <img class="absolute right-[-0.5rem] top-[-4rem] z-0 h-[860px] w-auto" src="./assets/hero-image.png" alt="">
     </div>
 
-    <div class="bg-[#881946] h-[550px] relative flex align-middle justify-center" style="align-items: center;">
-        <h2 class="text-white text-6xl absolute left-[5rem] w-1/2 z-10" style="font-family: 'Ms Madi', cursive;">The best way to predict the future is to create it</h2>
-        <img class="absolute left-20 bottom-10 z-0" src="./assets/circle.svg" alt="">
-        <img class="absolute right-0 bottom-0 z-0 h-5/6" src="./assets/abdul-kalam.svg" alt="">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg-[#881946] h-[550px] relative flex align-middle justify-center" style="align-items: center;">
+                <h2 class="text-white text-6xl absolute left-[5rem] w-1/2 z-10" style="font-family: 'Ms Madi', cursive;">The best way to predict the future is to create it</h2>
+                <h3 class=" text-white text-xl absolute bottom-20 z-10" style=" font-family: Inter, sans-serif;"><span class="font-bold text-3xl">APJ Abdul Kalam</span><br> Former President of India and <br> Aerospace Engineer </h3>
+                <img class="absolute left-25 bottom-10 z-0" src="./assets/circle.svg" alt="">
+                <img class="absolute right-0 bottom-0 z-0 h-5/6" src="./assets/abdul-kalam.svg" alt="">
+            </div>
+            <div class="swiper-slide bg-[#881946] h-[550px] relative flex align-middle justify-center" style="align-items: center;">
+                <h2 class="text-white text-6xl absolute right-[5rem] w-1/2 z-10" style="font-family: 'Ms Madi', cursive;">Innovation is the key to success in this rapidly changing world</h2>
+                <h3 class=" text-white text-xl absolute bottom-20 right-10 z-10" style=" font-family: Inter, sans-serif;"><span class="font-bold text-3xl">Ratan Tata</span><br>Chairman Emeritus of Tata Sons <br> and Philanthropist  </h3>
+                <img class="absolute right-25 bottom-10 z-0" src="./assets/circle.svg" alt="">
+                <img class="absolute left-0 bottom-0 z-0 h-5/6" src="./assets/ratan_tata.svg" alt="">
+            </div>
+            <div class="swiper-slide bg-[#881946] h-[550px] relative flex align-middle justify-center" style="align-items: center;">
+                <h2 class="text-white text-6xl absolute left-[5rem] w-1/2 z-10" style="font-family: 'Ms Madi', cursive;">Don't be afraid to give up the good to go for the great</h2>
+                <h3 class=" text-white text-xl absolute bottom-20 z-10" style=" font-family: Inter, sans-serif;"><span class="font-bold text-3xl">JRD Tata</span><br> Founder of Tata Consultancy Services <br> (TCS) and Tata Group Pioneer </h3>
+                <img class="absolute left-25 bottom-10 z-0" src="./assets/circle.svg" alt="">
+                <img class="absolute right-[-5rem] bottom-0 z-0 h-5/6" src="./assets/jrd_tata.svg" alt="">
+            </div>
+            <div class="swiper-slide bg-[#881946] h-[550px] relative flex align-middle justify-center" style="align-items: center;">
+                <h2 class="text-white text-6xl absolute left-[5rem] w-1/2 z-10" style="font-family: 'Ms Madi', cursive;">The power to question is the basis of all human progress</h2>
+                <h3 class=" text-white text-xl absolute bottom-20 z-10" style=" font-family: Inter, sans-serif;"><span class="font-bold text-3xl">Indira Gandhi</span><br> Former Prime Minister of India <br> and Stateswoman </h3>
+                <img class="absolute left-25 bottom-10 z-0" src="./assets/circle.svg" alt="">
+                <img class="absolute right-0 bottom-0 z-0 h-5/6" src="./assets/indira_gandhi.svg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
     
     <div class="bg-[#F0AE34] min-h-[650px] relative text-center flex flex-col align-middle justify-evenly p-2 px-4 gap-4">
@@ -352,6 +454,50 @@
     <div>
     </div>
     </footer>
+
+    <script>
+        const heroSwiper = new Swiper('.swiper-hero', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.btn-nxt',
+                prevEl: '.btn-prev',
+            },
+
+            autoplay: {
+                delay: 5000,
+            },
+
+        });
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            autoplay: {
+                delay: 5000,
+            },
+
+        });
+    
+
+    </script>
+
+    <style>
+        .swiper-button-prev, .swiper-button-next {
+            color: black;
+        }
+    </style>
 
 </body>
 </html>
