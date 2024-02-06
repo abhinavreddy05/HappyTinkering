@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Happy Tinkering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lexend&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+        p, a, button {
+            font-family: 'Lexend', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Bakbak One', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+    </style>
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    
+    <nav class="bg-white relative z-20">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./assets/logo.svg" class="h-5 md:h-8" alt="Flowbite Logo" />
+            </a>
+            <div class="md:hidden flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a target="_blank" href="https://calendly.com/happytinkeringinnovation/30min"><button type="button" class=" text-white bg-[#881946] font-medium rounded-3xl text-sm px-4 py-2 text-center ">Set up a Call</button></a>
+                <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 gap-6" id="navbar-cta">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+                    <li>
+                    <a href="./about.html" class="block py-2 px-3 md:p-0 text-[#881946] rounded ">Who We Are</a>
+                    </li>
+                    <li>
+                    <a href="./what.html" class="block py-2 px-3 md:p-0 text-[#881946] rounded ">What We Do</a>
+                    </li>
+                    <li>
+                    <a href="./why.html" class="block py-2 px-3 md:p-0 text-[#881946] rounded ">Why We Do</a>
+                    </li>
+                    <li>
+                    <a href="./blogs.html" class="block py-2 px-3 md:p-0 text-[#881946] rounded ">Blogs</a>
+                    </li>
+                </ul>
+                <ul class="flex-col font-medium p-4 md:p-0 mt-4 hidden md:flex rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/happytinkering?igsh=NTc4MTIwNjQ2YQ=="><img src="./assets/social media/Instagram.png" alt="" style="height: 30px;"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://x.com/HappyTinkering?t=YSQfhVrpenMZoSEN2xFgTw&s=09"><img src="./assets/social media/TwitterX.png" alt="" style="height: 30px;"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/company/happytinkering/"><img src="./assets/social media/LinkedIn.png" alt="" style="height: 30px;"></a>
+                    </li>
+                </ul>
+                <a target="_blank" href="https://calendly.com/happytinkeringinnovation/30min"><button type="button" class="text-white bg-[#881946] font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block">Set up a Call</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-[#F0AE34] min-h-[550px] relative text-left flex flex-col align-middle justify-evenly p-2 px-8 md:px-4 gap-4 py-16" style="background-image: url(./assets/hero-bg.svg); background-size:cover; background-repeat: no-repeat;">
+
+        <img class="absolute h-[400px] left-[-10%] top-[-15%] z-0" src="./assets/why/why-grid-white.png" alt="">
+        <img class="absolute h-[200px] right-20 top-64 z-0" src="./assets/why/why-grid-white.png" alt="">
+
+        <img class="absolute h-[600px] top-12 left-0" src="./assets/yellow-semi.png" alt="">
+
+        <img class="absolute h-[400px] right-[-10%] bottom-[-15%] z-0" src="./assets/why/why-grid-white.png" alt="">
+
+        <div class="mx-auto relative z-10" style="background-image: url(./assets/augmented.png); background-size:cover; background-repeat: no-repeat; background-position: center;">
+            <div class="flex items-center justify-center align-end md:w-[70vw] h-[60vh] bg-gray-900 bg-opacity-50 relative z-10" style="align-items:end;">
+                <div class="text-left p-4">
+                    <h1 class="mb-4 ml-4 text-3xl font-semibold text-white uppercase md:text-5xl">
+                        Augmented Reality Scavenger Hunt: 
+                        <br>
+                        Unveiling Hidden Innovation in Everyday Places
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="flex flex-col gap-6 md:w-2/3 mx-auto relative z-10">
+            <p class="text-white text-lg md:text-xl">
+                <span class="text-4xl font-extrabold">S</span>
+                tep into a world where reality and imagination collide - welcome to the Augmented Reality (AR) Scavenger Hunt, where innovation lurks around every corner. In this blog, we'll embark on a journey to uncover the hidden gems of innovation hiding in plain sight, all through the lens of augmented reality.
+            </p>
+            <h1 class="text-white text-3xl font-extrabold capitalize">
+                The Power of Augmented Reality
+            </h1>
+            <p class="text-white text-lg md:text-xl">
+                Augmented Reality (AR) has transformed the way we perceive and interact with the world around us. According to market research, the global AR market is projected to reach $198 billion by 2025, driven by applications ranging from entertainment and gaming to education and commerce.
+                <br><br>
+                The beauty of augmented reality lies in its ability to reveal hidden layers of innovation in seemingly ordinary places. Consider, for instance, the case of historical landmarks. Through AR-enhanced apps, visitors can experience immersive tours, interactive exhibits, and historical reenactments, breathing new life into centuries-old monuments.
+                <br><br>
+                In the realm of education, AR scavenger hunts have become a popular tool for engaging students in hands-on learning experiences. By combining real-world environments with digital overlays, educators can spark curiosity, foster collaboration, and inspire a deeper appreciation for subjects ranging from history and science to art and literature.
+            </p>
+            <h1 class="text-white text-3xl font-extrabold capitalize">
+                Real-World Applications
+            </h1>
+            <p class="text-white text-lg md:text-xl">
+                The applications of AR scavenger hunts extend far beyond entertainment and education. In the retail sector, businesses are leveraging AR to enhance the shopping experience, allowing customers to visualize products in their own space before making a purchase. Research shows that AR-enhanced shopping experiences can increase conversion rates by up to 40%.
+                <br><br>
+                In urban planning and architecture, AR is revolutionizing the way cities are designed and built. By overlaying digital models onto physical landscapes, architects and urban planners can visualize proposed developments, assess environmental impact, and solicit feedback from stakeholders in real-time, streamlining the design process and promoting community engagement.
+            </p>
+            <h1 class="text-white text-3xl font-extrabold capitalize">
+                The Road Ahead
+            </h1>
+            <p class="text-white text-lg md:text-xl">
+                As we look to the future, the potential of augmented reality scavenger hunts is limited only by our imagination. By harnessing the power of AR, we can unlock new dimensions of innovation, transform everyday spaces into interactive playgrounds, and inspire a new generation of creators and explorers.
+                <br><br>
+                The Augmented Reality Scavenger Hunt is more than just a game; it's a window into a world where innovation knows no bounds. As we embark on this journey of discovery, let us embrace the transformative potential of AR, challenge our perceptions of reality, and uncover the hidden gems of innovation that await us in the world around us.
+            </p>
+        </div>
+    </div>
+
+
+    <footer
+    class="relative z-10 text-center md:text-left bg-[#631231] pt-20 pb-10 lg:pt-[120px] lg:pb-20"
+    >
+    <div class="container mx-auto">
+    <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4 sm:w-2/3 lg:w-5/12">
+            <div class="w-full mb-10">
+                <img
+                src="./assets/logo.svg"
+                alt="logo"
+                class="max-w-full hidden dark:block mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div class="w-full mb-10">
+                <ul class="space-y-3">
+                <li>
+                    <a
+                        href="./about.html"
+                        class="inline-block text-base leading-loose text-white hover:text-primary dark:text-dark-6"
+                        >
+                        Who We Are
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="./makerspaces.html"
+                        class="inline-block text-base leading-loose text-white hover:text-primary dark:text-dark-6"
+                        >
+                        What We Do
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="./blogs.html"
+                        class="inline-block text-base leading-loose text-white hover:text-primary dark:text-dark-6"
+                        >
+                        Blogs
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+            <div class="w-full mb-10">
+                <h4 class="text-lg font-semibold text-dark dark:text-white mb-2">
+                Follow Us On
+                </h4>
+                <div class="flex items-center mb-6 mx-auto w-fit md:mx-0">
+                <a
+                    target="_blank"
+                    href="https://www.instagram.com/happytinkering?igsh=NTc4MTIwNjQ2YQ=="
+                    class="flex items-center justify-center w-8 h-8 mr-3 rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30"
+                        style="fill:#FFFFFF;">
+                        <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                    </svg>
+                </a>
+                <a
+                    target="_blank"
+                    href="https://x.com/HappyTinkering?t=YSQfhVrpenMZoSEN2xFgTw&s=09"
+                    class="flex items-center justify-center w-8 h-8 mr-3 rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"
+                        style="fill:#FFFFFF;">
+                        <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                    </svg>
+                </a>
+                <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/happytinkering/"
+                    class="flex items-center justify-center w-8 h-8 mr-3 rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"
+                        style="fill:#FFFFFF;">
+                        <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                    </svg>
+                </a>
+                </div>
+                <h4 class="text-lg font-semibold text-dark dark:text-white mb-2">
+                Write a Mail to us
+                </h4>
+                <div class="flex items-center mb-6 mx-auto w-fit md:mx-0">
+                <a
+                    target="_blank"
+                    href="mailto:ronakvj@gmail.com"
+                    class="flex items-center justify-center w-8 h-8 mr-3 rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABm0lEQVR4nO3XQYhNURgA4J+YiTIllJJSSilFUYqykJWynK3Z2crK1pKlpa2lrdiIYiEWykJNTdlgIWlqRE0yPk2dxen14t178e77u1/d3Tn3/uee85/zn4jBYDAYTIMkQhIhiZBESCIkHsiG/tuYZCAn8VR/vcCZPw6kOl8u4a3+eIfL2DLu/Bs3I9cwVxrP4zrWTM9aiWG+xDRXYpwo2VewWM3OHtzGD/83D+5ifxXHBbxps2s9wYnqRUfxwL/3GMdHvvuw6/bb6M90tDKyEvZOuhKanCNfcQM7yke24wo+6W51TB5cbZKbbQ7E9yO7x27cxHqLd33HHezruluG9l7ibBXAEdxr0P8RjlX9T+HZtEqUnyX4Q1VA5/H6N32WcbFqf6DMSqeK4m/VWt/K8tpVgttalt/Hqs3nsu63lTY7S1586WPR+AFLmwMpwS7gVnkWqkEulba9r35f4dyYa/VpPJ/FMv4+DuNgOYs2c2pm7yPrLbfmRlJfrGZSSCIkEZIISYQkQhIhiZBESCIkEZIIScRgMBgMYgp+AZ7xMRGVVHbYAAAAAElFTkSuQmCC">
+                </a>
+                </div>
+                <p class="text-base text-white opacity-50">
+                &copy; 2024 Happy Tinkering
+                </p>
+            </div>
+        </div>
+
+        <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div class="w-full mb-10">
+                <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2 ">
+                    <form id="subscribe">
+                        <div class="flex flex-col rounded-lg overflow-hidden sm:flex-row">
+                            <input class="py-3 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100" type="text" name="email" placeholder="Enter your email">
+                            <button class="py-3 px-4 bg-[#F0AE34] text-gray-100 font-semibold uppercase">subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+    </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+</body>
+</html>
