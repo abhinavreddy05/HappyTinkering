@@ -242,10 +242,18 @@
                 </li>
                 <li>
                     <a
-                        href="./makerspaces.html"
+                        href="./what.html"
                         class="inline-block text-base leading-loose text-white hover:text-primary dark:text-dark-6"
                         >
                         What We Do
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="./why.html"
+                        class="inline-block text-base leading-loose text-white hover:text-primary dark:text-dark-6"
+                        >
+                        Why We Do
                     </a>
                 </li>
                 <li>
@@ -318,10 +326,11 @@
         <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
             <div class="w-full mb-10">
                 <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2 ">
-                    <form id="subscribe">
+                    <form id="subscribe" action="https://api.sheetmonkey.io/form/kJgWvRjuR3sYxwaNQvSMGg" method="post">
                         <div class="flex flex-col rounded-lg overflow-hidden sm:flex-row">
-                            <input class="py-3 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100" type="text" name="email" placeholder="Enter your email">
-                            <button class="py-3 px-4 bg-[#F0AE34] text-gray-100 font-semibold uppercase">subscribe</button>
+                            <input class="py-3 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100" type="email" name="Email" required />
+                            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                            <input class="py-3 px-4 bg-[#F0AE34] text-gray-100 font-semibold uppercase" type="submit" value="Subscribe" />
                         </div>
                     </form>
                 </div>
