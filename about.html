@@ -92,7 +92,7 @@
         </div>
     </nav>
     
-    <div class="w-full bg-center bg-cover min-h-[80vh]" style="background-image: url(./assets/about-hero.png); background-size:cover; background-repeat: no-repeat;">
+    <div class="w-full bg-center bg-cover min-h-[80vh] relative z-10" style="background-image: url(./assets/about-hero.png); background-size:cover; background-repeat: no-repeat;">
         <div class="flex items-center justify-center w-full h-[80vh] bg-gray-900 bg-opacity-50">
             <div class="text-center md:text-right md:pr-20">
                 <p class="text-white text-xl md:w-2/5 md:ml-auto my-4">We aim to foster the spirit of creativity, curiosity, innovation and entrepreneurial mindset in 10M children in developing ecosystems of the world</p>
@@ -102,7 +102,8 @@
     </div>
 
     <div class="bg-[#F0AE34] min-h-[550px] relative text-left flex flex-col align-middle justify-evenly p-2 px-4 gap-4" style="background-image: url(./assets/hero-bg.svg); background-size:cover; background-repeat: no-repeat;">
-        <div class="flex flex-col gap-6 md:w-2/3 mx-auto">
+        <img class="absolute hidden lg:block h-[350px] top-[-20%] left-[-25%] z-0" src="./assets/bg-grid-yellow.png" alt="">
+        <div class="flex flex-col gap-6 md:w-2/3 mx-auto relative z-20">
             <h1 class="text-white text-3xl md:text-5xl font-extrabold capitalize">
                 Our Vision
             </h1>
@@ -111,7 +112,7 @@
         </div>
     </div>
 
-    <div class="bg-[#881946] min-h-[650px] relative text-left flex flex-col align-middle justify-evenly p-2 px-4 gap-4" style="background-image: url(./assets/about-sec-bg.svg); background-size:cover; background-repeat: no-repeat;">
+    <!-- <div class="bg-[#881946] min-h-[650px] relative text-left flex flex-col align-middle justify-evenly p-2 px-4 gap-4" style="background-image: url(./assets/about-sec-bg.svg); background-size:cover; background-repeat: no-repeat;">
         <div class="flex flex-col gap-6 md:w-2/3 mx-auto">
             <h1 class="text-white text-3xl md:text-5xl font-extrabold capitalize">
                 Our Methodology
@@ -123,21 +124,91 @@
                 We believe in democratizing knowledge through academic research, teaching, and publishing, ensuring that our findings contribute significantly to the enhancement of human capital. Join us as we embark on a journey to catalyze sustainable innovation and empower communities worldwide.
             </p>
         </div>
+    </div> -->
+
+    <div class="bg-[#881946] min-h-[700px] relative text-center flex flex-col align-middle justify-evenly p-2 px-4 gap-6 py-16">
+        <h1 class="text-white text-3xl md:text-5xl font-extrabold capitalize relative z-20">
+            Our Believes
+        </h1>
+        <h2 class="text-white text-2xl md:text-3xl relative z-20">
+            Innovate. 
+            <span class="text-[#36B3CF]">Collaborate.</span>
+            <span class="text-[#F0AE34]">Empower.</span>
+        </h2>
+        <p class=" text-white px-4 md:w-1/2 mx-auto my-2 relative z-20">
+            Our guiding principles are rooted in a commitment to excellence, integrity, and social responsibility. We believe in building meaningful relationships, driving positive change, and leaving a lasting impact on the world around us
+        </p>
+        <img class="absolute left-24 top-40 z-0 w-16" src="./assets/circle.svg" alt="">
+        <img class="absolute hidden md:block h-[350px] top-96 right-[-20%] z-0" src="./assets/bg-grid-pink.png" alt="">
+        <div class="grid-cols-1 md:grid-cols-2 gap-4 flex flex-wrap justify-evenly align-middle w-2/3 mx-auto mb-8 relative z-20">
+            
+            <div class="max-w-[300px] text-center flex flex-col justify-center gap-4" style="align-items: center;">
+                <img class="w-32" src="./assets/about/about1.png" alt="">
+                <h3 class="text-white text-2xl">
+                    Innovation
+                </h3>
+                <p class="text-white">
+                    We believe in the power of innovation to drive positive change and shape a better future
+                </p>
+            </div>
+
+            <div class="max-w-[300px] text-center flex flex-col justify-center gap-4" style="align-items: center;">
+                <img class="w-32" src="./assets/about/about2.png" alt="">
+                <h3 class="text-white text-2xl">
+                    Collaboration
+                </h3>
+                <p class="text-white">
+                    We value collaboration and believe that by working together, we can achieve more than we ever could alone
+                </p>
+            </div>
+            
+        </div>
+        <div class="grid-cols-1 md:grid-cols-2 gap-4 flex flex-wrap justify-evenly align-middle w-2/3 mx-auto relative z-20">
+            
+            <div class="max-w-[300px] text-center flex flex-col justify-center gap-4" style="align-items: center;">
+                <img class="w-32" src="./assets/about/about3.png" alt="">
+                <h3 class="text-white text-2xl">
+                    Integrity
+                </h3>
+                <p class="text-white">
+                    We uphold the highest standards of integrity, transparency, and ethical conduct in everything we do
+                </p>
+            </div>
+
+            <div class="max-w-[300px] text-center flex flex-col justify-center gap-4" style="align-items: center;">
+                <img class="w-32" src="./assets/about/about4.png" alt="">
+                <h3 class="text-white text-2xl">
+                    Empowerment
+                </h3>
+                <p class="text-white">
+                    We are committed to empower individuals and organizations to unlock their full potential
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bg-[#F0AE34] min-h-[60px] text-center py-8">
+        <h1 class="text-white text-4xl md:text-5xl font-extrabold capitalize">
+            Meet the Founder
+        </h1>
     </div>
 
     <div class="bg-[#F0AE34] min-h-[650px] relative grid-cols-2 flex flex-col md:flex-row md:gap-0 justify-evenly align-top p-4 md:p-2 px-4 py-12" style="align-items: flex-center; justify-content: center;">
-        <div class="col-span-2 md:col-span-1 md:w-1/2 flex flex-col gap-2 h-fit text-center m-10">
+        <div class="col-span-2 md:col-span-1 md:w-1/2 flex flex-col gap-2 h-fit text-center m-10 relative z-10">
             <img class=" w-[300px] h-[300px] md:w-[400px] md:h-[400px] mx-auto" src="./assets/founder.png" alt="">
             <h1 class="text-white text-4xl font-extrabold capitalize">
                 Mr. Ronak Jogeshwar
             </h1>
             <h3 class="text-white text-lg capitalize">
-                Former IL-ATL, at AIM and Harvard Alumni
+                Former IL-ATL, at AIM and 
+                <br>
+                Harvard Alumni
                 <br>
                 Founder - Happy Tinkering
             </h3>
         </div>
-        <div class="bg-[#36B3CF] col-span-2 md:col-span-1 md:w-1/2 h-fit flex flex-col gap-4 text-center md:text-left p-10 m-10">
+        <div class="bg-[#36B3CF] col-span-2 md:col-span-1 md:w-1/2 h-fit flex flex-col gap-4 text-center md:text-left p-10 m-10 relative z-20">
             <p class="text-white text-lg mx-auto md:mx-0">Ronak is a tinkerer, innovator, and cook. His making journey started with Maker’s Asylum maker space, and a year later, he helped establish the first 10 maker spaces in schools known as the Atal Tinkering Labs, currently a movement of more than 10,000 schools.
                 <br><br>
                 At 25, he joined NITI Aayog’s Atal Innovation Mission and is the youngest member of its founding team. A first-generation student, he started working at 12, fixing photocopier machines with his father to make ends meet.
@@ -151,6 +222,8 @@
                 His initiative, Happy Tinkering’s purpose is to design, deliver, demonstrate, and democratize impactful innovation strategies and programs across communities to foster a mindset change.
             </p>
         </div>
+        <img class="absolute h-[350px] top-0 left-[-20%] z-0" src="./assets/bg-grid-yellow.png" alt="">
+        <img class="absolute h-[350px] bottom-0 right-[-10%] z-0" src="./assets/bg-grid-yellow.png" alt="">
     </div>
 
     <footer
